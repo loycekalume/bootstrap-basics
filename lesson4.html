@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Elements Forms and Tables</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <!--            adding a table name,gender,email,age-->
+            <table class="table table-bordered table-hover table-secondary">
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Loyce Kalume</td>
+                    <td>Female</td>
+                    <td>loyce@gmail.com</td>
+                    <td>21</td>
+                </tr>
+
+                <tr>
+                    <td>Angelica Zawadi</td>
+                    <td>Female</td>
+                    <td>angel@gmail.com</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <td>Anthony Mwai</td>
+                    <td>Male</td>
+                    <td>mwai@gmail.com</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>Lucy Kalume</td>
+                    <td>Female</td>
+                    <td>lucy@gmail.com</td>
+                    <td>47</td>
+                </tr>
+
+                <tr>
+                    <td>Jibril Kheri</td>
+                    <td>Male</td>
+                    <td>jib@yahoo.com</td>
+                    <td>27</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h3 class="text-center text-success">Register Now</h3>
+            <form action="">
+                <div class="my-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" type="text" class="form-control rounded-0" placeholder="Kaina Miles">
+                </div>
+
+                <div class="my-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="text" class="form-control rounded-0" placeholder="miles@gmail.com">
+                </div>
+
+                <div class="my-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" class="form-control rounded-0">
+                </div>
+
+                <div class="my-3">
+                    <label for="dob" class="form-label">DOB</label>
+                    <input id="dob" type="date" min="2000-01-01" max="2006-12-31" class="form-control rounded-0">
+                </div>
+
+                <div class="my-3">
+                    <label for="weight" class="form-label">Weight</label>
+                    <input id="weight" type="number" step="any" class="form-control rounded-0">
+                </div>
+
+                <div class="my-3">
+                    <label for="select1">Education Level</label>
+                    <select name="select1" id="select1" class="form-select">
+                        <option value="Degree">Degree</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Certificate">Certificate</option>
+                        <option value="Secondary">Secondary</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-check-label mb-1">Gender</label>
+                    <div class="form-check ">
+                        <input id="female" type="radio" name="gender" required>
+                        <label for="female" class="form-label">Female</label>
+                    </div>
+
+
+                    <div class="form-check ">
+                        <input id="male" type="radio" name="gender" required>
+                        <label for="male" class="form-label">Male</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-check-label mb-1">Favorite Sports</label>
+                    <div class="form-check form-check-inline">
+                        <input id="football" type="checkbox" name="Sports">
+                        <label for=football class="form-label">Football</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input id="netball" type="checkbox" name="Sports">
+                        <label for=netball class="form-label">Netball</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input id="hockey" type="checkbox" name="Sports">
+                        <label for=hockey class="form-label">Hockey</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input id="swim" type="checkbox" name="Sports">
+                        <label for="swim" class="form-label">Swimming</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-success">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
